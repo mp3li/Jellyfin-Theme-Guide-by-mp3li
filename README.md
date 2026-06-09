@@ -30,6 +30,14 @@
 
 - [Current Stable Guide](#current-stable-guide)
 - [What The Guide Is For](#what-the-guide-is-for)
+- [Plain-English Basics](#plain-english-basics)
+- [How To Read Each Entry](#how-to-read-each-entry)
+- [Selector Types In Plain English](#selector-types-in-plain-english)
+- [What CSS Can And Cannot Do](#what-css-can-and-cannot-do)
+- [Version Scope](#version-scope)
+- [How This Guide Is Organized](#how-this-guide-is-organized)
+- [Category Counts](#category-counts)
+- [Examples From The Guide](#examples-from-the-guide)
 - [Versioned Documentation](#versioned-documentation)
 - [Jellyfin Web 10.11.11 Scope](#jellyfin-web-101111-scope)
 - [License and Credit](#license-and-credit)
@@ -56,6 +64,150 @@ The Guide is meant to be readable even if you are new to CSS theming. It explain
 - A practical example for every documented selector.
 
 The Directory is the same reference organized alphabetically like a glossary.
+
+## Plain-English Basics
+
+A **CSS selector** is the name you write before a CSS block. It tells the browser what part of the page you want to style.
+
+Example:
+
+```css
+.cardBox {
+  border-radius: 8px;
+}
+```
+
+In that example, `.cardBox` is the selector. It targets Jellyfin card boxes, such as poster cards or media tiles.
+
+## How To Read Each Entry
+
+The full Guide and Directory are large because they document every discovered selector. Each selector entry is written in the same practical format: what it is, what kind of selector it is, where it appears in Jellyfin Web source, what CSS can usually change, and a pasteable example.
+
+Each selector entry answers the same practical questions:
+
+- **What it is** explains the Jellyfin screen area in normal language.
+- **Selector type** explains whether the selector targets one screen, a reusable class, a built-in Jellyfin web component, an attribute, or a state like `:hover`.
+- **Where it appears in source** gives the Jellyfin Web files that mention it, so advanced theme makers can inspect the original context.
+- **What you can usually change** lists CSS property families that are realistic for that selector.
+- **Example** gives a complete CSS block you can paste into Jellyfin's Custom CSS box and then adjust.
+
+The examples are starting points, not rules. A selector for a page wrapper can often use background, spacing, and layout properties. A selector for a poster/card can often use radius, shadow, image sizing, and hover effects. A selector for a form control can often use border, background, focus color, height, and font styling.
+
+## Selector Types In Plain English
+
+- `#loginPage` starts with `#`, so it targets one specific page or unique element.
+- `.cardBox` starts with `.`, so it targets a reusable class that may appear in many places.
+- `emby-input` has no `.` or `#`, so it targets a custom Jellyfin web element.
+- `[data-type]` targets elements that carry a specific HTML data attribute. These are useful for advanced targeting, but they can be broad.
+- `.button:hover` targets a state. It applies only while the user is hovering over that element.
+
+## What CSS Can And Cannot Do
+
+CSS can change colors, spacing, borders, shadows, fonts, visibility, layout, hover/focus states, image fitting, and many responsive behaviors.
+
+CSS cannot reliably add new Jellyfin features, fetch different media, change server data, rewrite page logic, or create a fully new home-screen carousel by itself. Those changes need JavaScript changes, a Jellyfin Web fork, or a plugin-level approach.
+
+## Version Scope
+
+- Jellyfin Web version: `10.11.11`
+- Source tag: `v10.11.11`
+- Source commit inspected: `35c0793ece3adbd247eab290ae1effab851f3d37`
+- Stylesheet files scanned: 108
+- Markup/script files scanned: 841
+- Selectors documented: 2341
+
+## How This Guide Is Organized
+
+- The sections below match parts of the Jellyfin screen: pages, cards, lists, forms, playback, dashboard, and so on.
+- Every selector has a plain-language explanation.
+- Every selector has an example CSS block.
+- The [Directory](versions/jellyfin-web-10.11.11/docs/DIRECTORY.md) is the same information alphabetized like a glossary.
+
+## Category Counts
+
+| Category | Selectors |
+| --- | ---: |
+| Pages and Full Screens | 62 |
+| App Shell Layout and Spacing | 8 |
+| Header Navigation and Tabs | 9 |
+| Home Screen Rows | 6 |
+| Cards Posters and Artwork | 50 |
+| Lists Rows and Tables | 2 |
+| Login and Server Selection | 24 |
+| Libraries Search Filters and Sorting | 70 |
+| Item Details and Metadata | 76 |
+| Forms Inputs and Settings Controls | 188 |
+| Buttons Icons and Actions | 98 |
+| Dialogs Menus Toasts and Popups | 128 |
+| Indicators Progress and Status | 65 |
+| Playback Now Playing and OSD | 299 |
+| Live TV Guide and Recording | 169 |
+| Lyrics Subtitles and Text Tracks | 114 |
+| Editors Uploaders and Provider Settings | 550 |
+| Dashboard Admin and Users | 197 |
+| Screensavers Slideshows and Swiper | 8 |
+| Specialty Players and Built-in Plugins | 100 |
+| Data Attribute Selectors | 98 |
+| Utilities and Miscellaneous | 20 |
+
+## Examples From The Guide
+
+<details open>
+<summary>Example: login page wrapper</summary>
+
+<br />
+
+`#loginPage` is the main wrapper for the Jellyfin login screen. It is useful when you want login-page-only styling without affecting the rest of Jellyfin.
+
+```css
+#loginPage {
+  background: #202020;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 0.5rem;
+}
+```
+
+</details>
+
+<details>
+<summary>Example: poster and media cards</summary>
+
+<br />
+
+`.cardBox` is part of Jellyfin's card/artwork system. It can affect poster cards, backdrop cards, library tiles, people cards, card overlays, and fallback artwork depending on the screen.
+
+```css
+.cardBox {
+  border-radius: 8px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+}
+```
+
+</details>
+
+<details>
+<summary>Example: text inputs and form fields</summary>
+
+<br />
+
+`.emby-input` targets Jellyfin text input styling. It is useful for login fields, settings fields, dashboard forms, and other places where Jellyfin uses its standard input control.
+
+```css
+.emby-input {
+  background: #151515;
+  color: #ffffff;
+  border: 1px solid #777777;
+  border-radius: 6px;
+}
+
+.emby-input:focus {
+  border-color: #00a4dc;
+}
+```
+
+</details>
 
 ## Versioned Documentation
 
