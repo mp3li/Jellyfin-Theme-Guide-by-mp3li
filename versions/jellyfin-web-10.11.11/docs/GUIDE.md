@@ -1,8 +1,64 @@
-# Jellyfin Web 10.11.11 Theme-Making Guide
+<p align="center">
+  <img src="https://raw.githubusercontent.com/jellyfin/jellyfin-ux/master/branding/SVG/icon-transparent.svg" alt="Jellyfin icon" width="72" />
+</p>
 
-This is a beginner-friendly and technical guide to styling Jellyfin Web 10.11.11 with Custom CSS.
+<h1 align="center">Jellyfin Web 10.11.11 Theme-Making Guide</h1>
 
-It explains what each part of Jellyfin's interface is, what you can usually change with CSS, and gives examples for every selector found by this documentation project.
+<p align="center">
+  This is a beginner-friendly and technical guide to styling Jellyfin Web 10.11.11 with Custom CSS.
+</p>
+
+<p align="center">
+  It explains what each part of Jellyfin's interface is, what you can usually change with CSS, and gives examples for every selector found by this documentation project.
+</p>
+
+<p align="center">
+  <img alt="Jellyfin Web version" src="https://img.shields.io/badge/Jellyfin_Web-10.11.11-00A4DC?style=flat-square&labelColor=101010" />
+  <img alt="Selectors documented" src="https://img.shields.io/badge/selectors_documented-2%2C341-AA5CC3?style=flat-square&labelColor=101010" />
+  <img alt="Stylesheets scanned" src="https://img.shields.io/badge/stylesheets_scanned-108-00A4DC?style=flat-square&labelColor=101010" />
+  <img alt="Markup and script files scanned" src="https://img.shields.io/badge/markup_and_script_files-841-AA5CC3?style=flat-square&labelColor=101010" />
+  <img alt="Guide type" src="https://img.shields.io/badge/guide-Custom_CSS-00A4DC?style=flat-square&labelColor=101010" />
+</p>
+
+## Table of Contents
+
+<details>
+<summary>Open Table of Contents</summary>
+
+<br />
+
+- [Plain-English Basics](#plain-english-basics)
+- [How To Read Each Entry](#how-to-read-each-entry)
+- [Selector Types In Plain English](#selector-types-in-plain-english)
+- [What CSS Can And Cannot Do](#what-css-can-and-cannot-do)
+- [Version Scope](#version-scope)
+- [How This Guide Is Organized](#how-this-guide-is-organized)
+- [Category Counts](#category-counts)
+- [Complete Guide](#complete-guide)
+- [Pages and Full Screens](#pages-and-full-screens)
+- [App Shell Layout and Spacing](#app-shell-layout-and-spacing)
+- [Header Navigation and Tabs](#header-navigation-and-tabs)
+- [Home Screen Rows](#home-screen-rows)
+- [Cards Posters and Artwork](#cards-posters-and-artwork)
+- [Lists Rows and Tables](#lists-rows-and-tables)
+- [Login and Server Selection](#login-and-server-selection)
+- [Libraries Search Filters and Sorting](#libraries-search-filters-and-sorting)
+- [Item Details and Metadata](#item-details-and-metadata)
+- [Forms Inputs and Settings Controls](#forms-inputs-and-settings-controls)
+- [Buttons Icons and Actions](#buttons-icons-and-actions)
+- [Dialogs Menus Toasts and Popups](#dialogs-menus-toasts-and-popups)
+- [Indicators Progress and Status](#indicators-progress-and-status)
+- [Playback Now Playing and OSD](#playback-now-playing-and-osd)
+- [Live TV Guide and Recording](#live-tv-guide-and-recording)
+- [Lyrics Subtitles and Text Tracks](#lyrics-subtitles-and-text-tracks)
+- [Editors Uploaders and Provider Settings](#editors-uploaders-and-provider-settings)
+- [Dashboard Admin and Users](#dashboard-admin-and-users)
+- [Screensavers Slideshows and Swiper](#screensavers-slideshows-and-swiper)
+- [Specialty Players and Built-in Plugins](#specialty-players-and-built-in-plugins)
+- [Data Attribute Selectors](#data-attribute-selectors)
+- [Utilities and Miscellaneous](#utilities-and-miscellaneous)
+
+</details>
 
 ## Plain-English Basics
 

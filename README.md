@@ -1,8 +1,41 @@
-# Jellyfin Theme Guide by mp3li
+<p align="center">
+  <img src="https://raw.githubusercontent.com/jellyfin/jellyfin-ux/master/branding/SVG/icon-transparent.svg" alt="Jellyfin icon" width="72" />
+</p>
 
-A community documentation project for Jellyfin Web theming.
+<h1 align="center">Jellyfin Theme Guide by mp3li</h1>
 
-This repository documents Jellyfin Web's CSS theming surface for people who want to build custom Jellyfin themes. It is not a finished visual theme, a Jellyfin plugin, or an official Jellyfin project.
+<p align="center">
+  A community documentation project for Jellyfin Web theming.
+</p>
+
+<p align="center">
+  This repository documents Jellyfin Web's CSS theming surface for people who want to build custom Jellyfin themes. It is not a finished visual theme, a Jellyfin plugin, or an official Jellyfin project.
+</p>
+
+<p align="center">
+  <img alt="Jellyfin Web version" src="https://img.shields.io/badge/Jellyfin_Web-10.11.11-00A4DC?style=flat-square&labelColor=101010" />
+  <img alt="Selectors documented" src="https://img.shields.io/badge/selectors_documented-2%2C341-AA5CC3?style=flat-square&labelColor=101010" />
+  <img alt="Guide type" src="https://img.shields.io/badge/guide-CSS_theming-00A4DC?style=flat-square&labelColor=101010" />
+  <img alt="Source tag" src="https://img.shields.io/badge/source-v10.11.11-AA5CC3?style=flat-square&labelColor=101010" />
+  <img alt="License" src="https://img.shields.io/badge/license-CC_BY--SA_4.0-00A4DC?style=flat-square&labelColor=101010" />
+  <img alt="Project status" src="https://img.shields.io/badge/status-community_docs-AA5CC3?style=flat-square&labelColor=101010" />
+</p>
+
+## Table of Contents
+
+<details>
+<summary>Open Table of Contents</summary>
+
+<br />
+
+- [Current Stable Guide](#current-stable-guide)
+- [What The Guide Is For](#what-the-guide-is-for)
+- [Versioned Documentation](#versioned-documentation)
+- [Jellyfin Web 10.11.11 Scope](#jellyfin-web-101111-scope)
+- [License and Credit](#license-and-credit)
+- [Branding](#branding)
+
+</details>
 
 ## Current Stable Guide
 
