@@ -1,0 +1,41 @@
+{
+  "jellyfinWebVersion": "10.11.11",
+  "tag": "v10.11.11",
+  "commit": "35c0793ece3adbd247eab290ae1effab851f3d37",
+  "styleFiles": 108,
+  "markupFiles": 841,
+  "total": 2341,
+  "categories": {
+    "Pages and Full Screens": 62,
+    "App Shell Layout and Spacing": 8,
+    "Header Navigation and Tabs": 9,
+    "Home Screen Rows": 6,
+    "Cards Posters and Artwork": 50,
+    "Lists Rows and Tables": 2,
+    "Login and Server Selection": 24,
+    "Libraries Search Filters and Sorting": 70,
+    "Item Details and Metadata": 76,
+    "Forms Inputs and Settings Controls": 188,
+    "Buttons Icons and Actions": 98,
+    "Dialogs Menus Toasts and Popups": 128,
+    "Indicators Progress and Status": 65,
+    "Playback Now Playing and OSD": 299,
+    "Live TV Guide and Recording": 169,
+    "Lyrics Subtitles and Text Tracks": 114,
+    "Editors Uploaders and Provider Settings": 550,
+    "Dashboard Admin and Users": 197,
+    "Screensavers Slideshows and Swiper": 8,
+    "Specialty Players and Built-in Plugins": 100,
+    "Data Attribute Selectors": 98,
+    "Utilities and Miscellaneous": 20
+  },
+  "kindCounts": {
+    "CSS stylesheet class": 920,
+    "class used in Jellyfin markup": 1359,
+    "CSS stylesheet ID": 19,
+    "ID used in Jellyfin markup": 479,
+    "custom Jellyfin element in CSS": 24,
+    "Jellyfin custom element": 19,
+    "data attribute selector": 98
+  }
+}
